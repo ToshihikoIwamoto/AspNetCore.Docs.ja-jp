@@ -22,7 +22,7 @@ ms.locfileid: "65610427"
 * すべての要求に HTTPS を必要とさせる。
 * すべての HTTP 要求を HTTPS にリダイレクトさせる。
 
-API ようにするありませんクライアントの最初の要求で機密データを送信します。
+API は、クライアントが最初の要求で機密データを送信することを妨げることはできません。
 
 > [!WARNING]
 > **いない**使用[RequireHttpsAttribute](/dotnet/api/microsoft.aspnetcore.mvc.requirehttpsattribute)機密情報を受け取る Web Api で。 `RequireHttpsAttribute` はブラウザーを HTTP から HTTPS へリダイレクトするために HTTP ステータス コードを使用します。 API クライアントはこれを理解しない場合や、HTTP から HTTPS へのリダイレクトに従わない場合があります。 このようなクライアントは、HTTP 経由で情報を送信することがあります。 Web API は次のいずれかの対策を講じるべきです:
